@@ -6,12 +6,12 @@
 }
 
 .sections {
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 header {
-    background-color: #1F2937;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@ header ul {
 }
 
 header a {
-    color: white;
+    color: rgb(212, 212, 212);
     text-decoration: none;
 }
 
@@ -40,23 +40,41 @@ header a:hover {
     border-radius: 50%;
 }
 
-.section-1 {
-    background-color: #1F2937;
+.logo a {
     display: flex;
-    justify-content: space-between;
-    height: 40vh;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    gap: 6px;
+    font-weight: 900;
+}
+
+.section-1 {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 .section-1 h1 {
     font-size: 48px;
     font-weight: 900;
-    color: #F9FAF8;
+    color: rgb(212, 212, 212);
+}
+
+.left-1 {
+    flex-basis: 35%;
+}
+
+.left-1 p {
+    color: rgb(212, 212, 212);
+    font-size: 18px;
 }
 
 .right-1 {
-    flex-basis: 50%;
+    flex-basis: 40%;
     flex-shrink: 0;
 }
 
@@ -65,8 +83,183 @@ header a:hover {
     height: auto;
 }
 
-.placeholder-image-1 {
-    width: 100%;
-    height: inherit;
-    background-color: gray;
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    flex-basis: 50%;
 }
+
+.button a {
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: rgb(69, 0, 0);
+    border: 2px solid rgb(169, 169, 169);
+    border-radius: 8px;
+    padding: 8px 35px;
+    font-size: 17px;
+}
+.button a:hover {
+    background-color: rgb(169, 0, 0);
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 160px;
+    gap: 40px;
+    background-color: rgb(69, 0, 0);
+    color: rgb(212, 212, 212);
+}
+
+.section-2 h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: rgb(212, 212, 212);
+}
+
+.bottom-2 {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.subsets-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.subset-image-placeholder-2 {
+    width: 280px;
+    height: 280px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 12px;
+    
+}
+
+.subsets-2 p {
+    width: 180px;
+}
+
+.section-3 {
+    background-color: black;
+    padding: 160px 0;
+    font-size: 36px;
+    color: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-3 p {
+    width: 50%;
+}
+
+.quote-1 {
+    font-weight: lighter;
+}
+
+.quote-2 {
+    text-align: right;
+    font-size: 70%;
+    color: rgb(169, 169, 169);
+}
+
+.section-4 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: rgb(69, 0, 0);
+}
+
+.box-4 {
+    background-color: black;
+    padding: 55px 30px;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(169, 169, 169);
+    border-radius: 12px;
+    align-items: center;
+    border: 1px solid rgb(169, 169, 169);
+}
+
+.right-4 a {
+    border: 2px solid rgb(169, 169, 169);
+    border-radius: 8px;
+    padding: 8px 35px;
+    text-decoration: none;
+    color: rgb(169, 169, 169);
+    font-weight: bolder;
+    font-size: 17px;
+    background-color: rgb(69, 0, 0);
+}
+.right-4 a:hover {
+    background-color: rgb(169, 0, 0);
+}
+
+footer {
+    background-color: black;
+    color: rgb(169, 169, 169);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 17px;
+}
+
+@media (max-width: 1400px) {
+    .sections {
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+    .section-3 p {
+        width: 70%;
+    }
+    .left-1 {
+        flex-basis: 47%;
+    }
+    .right-1 {
+        flex-basis: 52%;
+    }
+    .subset-image-placeholder-2 {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section-1 {
+        flex-wrap: wrap;
+    }
+    .left-1 {
+        flex-basis: 100%;
+    }
+    .right-1 {
+        flex-basis: 100%;
+    }
+    .sections {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .section-3 p {
+        width: 100%;
+    }
+    .box-4 {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    header ul {
+        gap: 10px;
+    }
+}
+
